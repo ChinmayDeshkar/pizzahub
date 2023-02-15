@@ -1,0 +1,33 @@
+<div class="container d-flex" style="background-color: white; display: flexbox; padding-top: 15px; margin: 12px 0px; justify-content: center;">
+
+  <div class="card" *ngFor = "let pizza of pizzaDetails">
+      <img class="card-img-top" src={{pizza.imgURL}} alt="Card image cap">
+      <div style="position: relative; margin-top: -27px; margin-left: 12px;color: white;">&#8377; {{pizza.price}} </div>
+      <div class="card-body">
+        <h5 class="card-title">{{pizza.name}}</h5>
+        <p class="card-text"> {{pizza.desc}} </p>
+        <div class="addons">
+          <div class="size" style="display: flex; flex-direction: column;">
+            <span style="color: rgba(122, 122, 122, 0.87);font-size: 0.69rem;">Size</span>
+              <select name="" id="" style="border: none; width: 100%; font-size: 11px; font-weight: 600;">
+                <option value=""> Small </option>
+                <option value=""> Medium </option>
+                <option value=""> Large </option>
+              </select>
+          </div>
+          <div class="crust" style="margin-left: 10px;display: flex; flex-direction: column;">
+            <span style="color: rgba(122, 122, 122, 0.87);font-size: 0.69rem;">Crust</span>
+            <select name="" id="" style="border: none; width: 100%; font-size: 11px; font-weight: 600;">
+              <option value=""> New Hand Tossed </option>
+              <option value=""> 100% Wheat Thin Crust </option>
+              <option value=""> Cheese Burst </option>
+            </select>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary cart-button">Add to cart</a>
+      </div>
+    </div>
+  
+    
+  </div>
+  

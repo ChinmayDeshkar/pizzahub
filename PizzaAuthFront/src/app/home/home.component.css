@@ -1,0 +1,68 @@
+
+.card{
+    margin: 5px 10px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.50);
+/* -webkit-box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.72);
+-moz-box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.72); */
+}
+
+.card-text{
+    flex-basis: auto;
+    line-height: 1.2;
+    font-size: 0.875rem;
+    color: rgba(122, 122, 122, 0.87);
+    margin-top: 0.5rem;
+    width: 90%;
+    height: 3rem;
+    overflow:scroll;
+}
+.card-body{
+    padding: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.container{
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.nav-link{
+    font-family: serif !important;
+}
+
+.addons{
+    display: flex;
+    justify-content: space-between;
+
+}
+select:focus-visible{
+    border: none;
+}
+.cart-button{
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .card{
+        margin: 7px 2px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.50);
+    }
+  }

@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body{
+    background-color: #F2F2F2;
+}
+.list-footer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-footer a{
+    margin: 0px 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+
+}
+.footer-logo{
+    display: flex;
+    margin-left: 12px;
+}
